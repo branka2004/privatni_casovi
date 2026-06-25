@@ -1,0 +1,300 @@
+﻿@model List<Web.Models.CasDto>
+
+@using Microsoft.AspNetCore.Http
+
+@{
+    var tipKorisnika =
+        Context.Session.GetString("tipKorisnika");
+
+    var cekanje =
+        Model.Where(x => x.Status == "NaCekanju")
+             .ToList();
+
+    var zakazani =
+        Model.Where(x => x.Status == "Zakazan")
+             .ToList();
+
+    var istorija =
+        Model.Where(x =>
+            x.Status == "Odrzan" ||
+            x.Status == "Otkazan" ||
+            x.Status == "Odbijen")
+             .ToList();
+}
+
+<h2 class="mb-4">
+    📅 Moji časovi
+</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        Nemate časova.
+    </div>
+}
+
+@if (cekanje.Any())
+{
+    <h4 class="mb-3 text-warning">
+        ⏳ Zahtevi za čas
+    </h4>
+
+    <div class="row">
+
+        @foreach (var cas in cekanje)
+        {
+            <div class="col-md-4 mb-4">
+
+                <div class="card border-warning shadow">
+
+                    <div class="card-body">
+
+                        <h5>
+                            @cas.PredmetNaziv
+                        </h5>
+
+                        <hr />
+
+                        <p>
+                            <strong>Datum:</strong>
+                            @cas.Datum.ToShortDateString()
+                        </p>
+
+                        <p>
+                            <strong>Od:</strong>
+                            @cas.VremePocetka
+                        </p>
+
+                        <p>
+                            <strong>Do:</strong>
+                            @cas.VremeZavrsetka
+                        </p>
+
+                        <p>
+                            <strong>Predavač:</strong>
+                            @cas.PredavacIme
+                        </p>
+
+                        <p>
+                            <strong>Učenik:</strong>
+                            @cas.UcenikIme
+                        </p>
+
+                        @if (tipKorisnika == "Predavac")
+                        {
+                            <form asp-action="Potvrdi"
+                                  method="post"
+                                  class="mb-2">
+
+                                <input type="hidden"
+                                       name="id"
+                                       value="@cas.CasId" />
+
+                                <button class="btn btn-success w-100">
+                                    Potvrdi čas
+                                </button>
+
+                            </form>
+
+                            <form asp-action="Odbij"
+                                  method="post">
+
+                                <input type="hidden"
+                                       name="id"
+                                       value="@cas.CasId" />
+
+                                <button class="btn btn-danger w-100">
+                                    Odbij čas
+                                </button>
+
+                            </form>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning text-dark">
+                                Čeka potvrdu predavača
+                            </span>
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+}
+
+@if (zakazani.Any())
+{
+    <h4 class="mb-3 text-success">
+        📌 Zakazani časovi
+    </h4>
+
+    <div class="row">
+
+        @foreach (var cas in zakazani)
+        {
+            <div class="col-md-4 mb-4">
+
+                <div class="card shadow border-0">
+
+                    <div class="card-body">
+
+                        <h5>
+                            @cas.PredmetNaziv
+                        </h5>
+
+                        <hr />
+
+                        <p>
+                            <strong>Datum:</strong>
+                            @cas.Datum.ToShortDateString()
+                        </p>
+
+                        <p>
+                            <strong>Od:</strong>
+                            @cas.VremePocetka
+                        </p>
+
+                        <p>
+                            <strong>Do:</strong>
+                            @cas.VremeZavrsetka
+                        </p>
+
+                        <p>
+                            <strong>Status:</strong>
+                            @cas.Status
+                        </p>
+
+                        <p>
+                            <strong>Predavač:</strong>
+                            @cas.PredavacIme
+                        </p>
+
+                        <p>
+                            <strong>Učenik:</strong>
+                            @cas.UcenikIme
+                        </p>
+
+                        @if (tipKorisnika == "Predavac")
+                        {
+                            <form asp-action="Odrzan"
+                                  method="post"
+                                  class="mb-2">
+
+                                <input type="hidden"
+                                       name="id"
+                                       value="@cas.CasId" />
+
+                                <button class="btn btn-success w-100">
+                                    Označi kao održan
+                                </button>
+
+                            </form>
+                        }
+
+                        <form asp-action="Otkazi"
+                              method="post">
+
+                            <input type="hidden"
+                                   name="id"
+                                   value="@cas.CasId" />
+
+                            <button class="btn btn-danger w-100">
+                                Otkaži čas
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+}
+
+@if (istorija.Any())
+{
+    <h4 class="mt-4 mb-3 text-secondary">
+        📚 Istorija časova
+    </h4>
+
+    <div class="row">
+
+        @foreach (var cas in istorija)
+        {
+            <div class="col-md-4 mb-4">
+
+                <div class="card shadow-sm border-0">
+
+                    <div class="card-body">
+
+                        <h5>
+                            @cas.PredmetNaziv
+                        </h5>
+
+                        <hr />
+
+                        <p>
+                            <strong>Datum:</strong>
+                            @cas.Datum.ToShortDateString()
+                        </p>
+
+                        <p>
+                            <strong>Od:</strong>
+                            @cas.VremePocetka
+                        </p>
+
+                        <p>
+                            <strong>Do:</strong>
+                            @cas.VremeZavrsetka
+                        </p>
+
+                        <p>
+                            <strong>Status:</strong>
+
+                            @if (cas.Status == "Odrzan")
+                            {
+                                <span class="badge bg-success">
+                                    Održan
+                                </span>
+                            }
+                            else if (cas.Status == "Otkazan")
+                            {
+                                <span class="badge bg-danger">
+                                    Otkazan
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">
+                                    Odbijen
+                                </span>
+                            }
+
+                        </p>
+
+                        <p>
+                            <strong>Predavač:</strong>
+                            @cas.PredavacIme
+                        </p>
+
+                        <p>
+                            <strong>Učenik:</strong>
+                            @cas.UcenikIme
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+}

@@ -1,0 +1,179 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Početna";
+
+    var tipKorisnika =
+        Context.Session.GetString("tipKorisnika");
+}
+
+<div class="text-center mt-5">
+
+    <div class="p-5 mb-5 bg-white rounded-4 shadow">
+
+        <h1 class="display-4 fw-bold">
+            🎓 Private Lessons
+        </h1>
+
+        <p class="lead">
+            Platforma za povezivanje učenika i predavača.
+        </p>
+
+    </div>
+
+    <hr />
+
+    <div class="row mt-5">
+
+        @if (tipKorisnika == "Ucenik")
+        {
+            <div class="col-md-4 mb-4">
+
+                <a asp-controller="Predmeti"
+                   asp-action="Index"
+                   style="text-decoration:none;color:inherit;">
+
+                    <div class="card shadow border-0 h-100">
+
+                        <div class="card-body">
+
+                            <h3>📚 Predmeti</h3>
+
+                            <p>
+                                Pregled svih dostupnih predmeta.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="col-md-4 mb-4">
+
+                <a asp-controller="Predavaci"
+                       asp-action="Index"
+                       style="text-decoration:none;color:inherit;">
+
+                    <div class="card shadow border-0 h-100">
+
+                        <div class="card-body">
+
+                            <h3>👨‍🏫 Predavači</h3>
+
+                            <p>
+                                Pronađi odgovarajućeg predavača.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="col-md-4 mb-4">
+
+                <a asp-controller="Casovi"
+                   asp-action="Index"
+                   style="text-decoration:none;color:inherit;">
+
+                    <div class="card shadow border-0 h-100">
+
+                        <div class="card-body">
+
+                            <h3>📝 Moji časovi</h3>
+
+                            <p>
+                                Pregled zakazanih časova.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+        }
+        else
+        {
+            <div class="col-md-4 mb-4">
+
+                <a asp-controller="Casovi"
+                   asp-action="Index"
+                   style="text-decoration:none;color:inherit;">
+
+                    <div class="card shadow border-0 h-100">
+
+                        <div class="card-body">
+
+                            <h3>📅 Moji časovi</h3>
+
+                            <p>
+                                Pregled zakazanih časova.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="col-md-4 mb-4">
+
+                <a asp-controller="Predmeti"
+                   asp-action="Index"
+                   style="text-decoration:none;color:inherit;">
+
+                    <div class="card shadow border-0 h-100">
+
+                        <div class="card-body">
+
+                            <h3>📖 Predmeti</h3>
+
+                            <p>
+                                Predmeti koje predaješ.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+           <div class="col-md-4 mb-4">
+
+    <a asp-controller="Profil"
+       asp-action="Index"
+       style="text-decoration:none;color:inherit;">
+
+        <div class="card shadow border-0 h-100">
+
+            <div class="card-body">
+
+                <h3>👤 Profil</h3>
+
+                <p>
+                    Pregled i izmena profila.
+                </p>
+
+            </div>
+
+        </div>
+
+    </a>
+
+</div>
+        }
+
+    </div>
+
+</div>

@@ -1,0 +1,46 @@
+﻿@model Web.Models.CreatePredmetViewModel
+
+@{
+    ViewData["Title"] = "Dodaj predmet";
+}
+
+<div class="row justify-content-center mt-5">
+
+    <div class="col-md-6">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body p-5">
+
+                <h2 class="mb-4">
+                    ➕ Dodaj predmet
+                </h2>
+
+                <form method="post">
+
+                    <div class="mb-3">
+                        <label>Naziv</label>
+                        <input asp-for="Naziv"
+                               class="form-control" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label>Oblast</label>
+                        <input asp-for="Oblast"
+                               class="form-control" />
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-success w-100">
+                        Sačuvaj
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

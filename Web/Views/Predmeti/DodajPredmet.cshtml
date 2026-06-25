@@ -1,0 +1,200 @@
+﻿    @model Web.Models.AddPredmetPredavacuViewModel
+
+    @{
+        ViewData["Title"] = "Dodaj predmet";
+    }
+
+    <div class="card shadow border-0">
+
+        <div class="card-body p-5">
+
+            <h2 class="mb-4">
+                📚 Dodaj predmet
+            </h2>
+
+        @if (Model.Errors.Any())
+        {
+            <div class="alert alert-danger">
+                <ul class="mb-0">
+                    @foreach (var error in Model.Errors)
+                    {
+                        <li>@error</li>
+                    }
+                </ul>
+            </div>
+        }
+
+            <form method="post">
+
+                <div class="row align-items-end">
+
+                    <div class="col-md-10">
+
+                        <label class="form-label">
+                            Predmet
+                        </label>
+
+                       <select asp-for="PredmetId"
+            class="form-select">
+
+        <option value="">
+            -- Izaberite predmet --
+        </option>
+
+        @foreach (var predmet in Model.Predmeti)
+        {
+            <option value="@predmet.PredmetId">
+                @predmet.Naziv
+            </option>
+        }
+
+    </select>
+
+                            @foreach (var predmet in Model.Predmeti)
+                            {
+                                <option value="@predmet.PredmetId">
+                                    @predmet.Naziv
+                                </option>
+                            }
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <button type="button"
+                                class="btn btn-outline-success w-100"
+                                onclick="toggleNoviPredmet()">
+                            ➕
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div id="noviPredmetPanel"
+                     style="display:none;">
+
+                    <hr />
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+
+                        <h5>
+                            Novi predmet
+                        </h5>
+
+                        <button type="button"
+                                class="btn btn-sm btn-outline-danger"
+                                onclick="toggleNoviPredmet()">
+                            ✖
+                        </button>
+
+                    </div>
+
+                    <input asp-for="NoviPredmet"
+                           type="hidden"
+                           id="noviPredmetFlag" />
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Naziv
+                        </label>
+
+                        <input asp-for="Naziv"
+                               class="form-control" />
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Oblast
+                        </label>
+
+                        <input asp-for="Oblast"
+                               class="form-control" />
+
+                    </div>
+
+                </div>
+
+                <div class="mb-3 mt-4">
+
+                    <label class="form-label">
+                        Godine iskustva
+                    </label>
+
+                    <input asp-for="GodineIskustva"
+                           class="form-control" />
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="form-label">
+                        Nivo
+                    </label>
+
+                    <select asp-for="Nivo"
+                            class="form-select">
+
+                        <option value="0">
+                            Osnovni
+                        </option>
+
+                        <option value="1">
+                            Srednji
+                        </option>
+
+                        <option value="2">
+                            Napredni
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button type="submit"
+                        class="btn btn-success">
+                    Sačuvaj
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    @section Scripts
+    {
+        <script>
+
+            let otvoren = false;
+
+            function toggleNoviPredmet()
+            {
+                const panel =
+                    document.getElementById(
+                        "noviPredmetPanel");
+
+                const flag =
+                    document.getElementById(
+                        "noviPredmetFlag");
+
+                otvoren = !otvoren;
+
+                panel.style.display =
+                    otvoren
+                        ? "block"
+                        : "none";
+
+                flag.value =
+                    otvoren
+                        ? "true"
+                        : "false";
+            }
+
+        </script>
+    }

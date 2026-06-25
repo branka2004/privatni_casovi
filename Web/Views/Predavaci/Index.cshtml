@@ -1,0 +1,71 @@
+﻿@model List<PredavacDto>
+
+@{
+    ViewData["Title"] = "Predavači";
+}
+
+<h2 class="mb-4">👨‍🏫 Predavači</h2>
+
+<div class="mb-4">
+    <input type="text"
+           id="searchInput"
+           class="form-control"
+           placeholder="Pretraži predavača po imenu, prezimenu ili email-u..." />
+</div>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Email</th>
+            <th>Cena po satu</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr style="cursor:pointer"
+                onclick="location.href='@Url.Action("Detalji", "Predavaci", new { id = p.KorisnikId })'">
+
+                <td>@p.Ime</td>
+                <td>@p.Prezime</td>
+                <td>@p.Email</td>
+                <td>@p.CenaPoSatu din</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    tbody tr:hover {
+        background-color: #f5f3ff;
+        transition: 0.2s;
+    }
+</style>
+
+<script>
+    document
+        .getElementById("searchInput")
+        .addEventListener("keyup", function () {
+
+            let value =
+                this.value.toLowerCase();
+
+            let rows =
+                document.querySelectorAll("tbody tr");
+
+            rows.forEach(row => {
+
+                let text =
+                    row.innerText.toLowerCase();
+
+                row.style.display =
+                    text.includes(value)
+                        ? ""
+                        : "none";
+            });
+        });
+</script>

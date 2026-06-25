@@ -1,0 +1,99 @@
+﻿@model List<Web.Models.PredmetDto>
+
+@{
+    ViewData["Title"] = "Predmeti";
+}
+
+<h2 class="mb-4">
+    📚 Predmeti
+</h2>
+
+@if (ViewBag.TipKorisnika == "Predavac")
+{
+    <a asp-action="DodajPredmet"
+           class="btn btn-success mb-4">
+        + Dodaj predmet
+    </a>
+}
+
+<div class="mb-4">
+    <input type="text"
+           id="searchInput"
+           class="form-control"
+           placeholder="Pretraži predmet po nazivu ili oblasti..." />
+</div>
+
+<div class="row" id="predmetiContainer">
+
+    @foreach (var predmet in Model)
+    {
+        <div class="col-md-4 mb-4 predmet-card">
+
+            <div class="card shadow border-0 h-100">
+
+                <div class="card-body">
+
+                    <h4>@predmet.Naziv</h4>
+
+                    <p>
+                        Oblast: @predmet.Oblast
+                    </p>
+
+                    @if (ViewBag.TipKorisnika == "Ucenik")
+                    {
+                        <a asp-action="Predavaci"
+                               asp-route-predmetId="@predmet.PredmetId"
+                               class="btn btn-primary">
+                            Prikaži predavače
+                        </a>
+                    }
+
+                    @if (ViewBag.TipKorisnika == "Predavac")
+                    {
+                        <form asp-action="Obrisi"
+                              method="post">
+
+                            <input type="hidden"
+                                   name="predmetId"
+                                   value="@predmet.PredmetId" />
+
+                            <button type="submit"
+                                    class="btn btn-danger">
+                                Obriši
+                            </button>
+
+                        </form>
+                    }
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>
+
+<script>
+    document
+        .getElementById("searchInput")
+        .addEventListener("keyup", function () {
+
+            let value =
+                this.value.toLowerCase();
+
+            let cards =
+                document.querySelectorAll(".predmet-card");
+
+            cards.forEach(card => {
+
+                let text =
+                    card.innerText.toLowerCase();
+
+                card.style.display =
+                    text.includes(value)
+                        ? ""
+                        : "none";
+            });
+        });
+</script>

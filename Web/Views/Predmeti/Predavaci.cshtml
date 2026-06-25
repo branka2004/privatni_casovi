@@ -1,0 +1,73 @@
+﻿@model List<Web.Models.PredavacDto>
+
+@{
+    ViewData["Title"] = "Predavači";
+}
+
+<h2 class="mb-4">
+    👨‍🏫 Predavači za izabrani predmet
+</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        Trenutno nema predavača za ovaj predmet.
+    </div>
+}
+else
+{
+    <div class="row">
+
+        @foreach (var predavac in Model)
+        {
+            <div class="col-md-4 mb-4">
+
+                <div class="card shadow border-0 h-100">
+
+                    <div class="card-body">
+
+                        <h4>
+                            @predavac.Ime @predavac.Prezime
+                        </h4>
+
+                        <hr />
+
+                        <p>
+                            <strong>Cena:</strong>
+                            @predavac.CenaPoSatu din/sat
+                        </p>
+
+                        <p>
+                            <strong>Iskustvo:</strong>
+                            @predavac.GodineIskustva godina
+                        </p>
+
+                        <p>
+                            <strong>Nivo:</strong>
+                            @predavac.Nivo
+                        </p>
+
+                        <p>
+                            <strong>Biografija:</strong>
+                        </p>
+
+                        <p>
+                            @predavac.Biografija
+                        </p>
+
+                       <a asp-controller="Casovi"
+   asp-action="Zakazi"
+   asp-route-predavacId="@predavac.KorisnikId"
+   asp-route-predmetId="@predavac.PredmetId"
+   class="btn btn-success w-100">
+    Zakaži čas
+</a>
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+}

@@ -1,0 +1,245 @@
+﻿@model Web.Models.ProfilViewModel
+
+<h2 class="mb-4">
+    👤 Moj profil
+</h2>
+
+<div class="card shadow border-0">
+
+    <div class="card-body p-4">
+
+        <div class="row">
+
+            <div class="col-md-5">
+
+                <form method="post">
+
+                    <input asp-for="Predavac.KorisnikId"
+                           type="hidden" />
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Ime
+                        </label>
+
+                        <input asp-for="Predavac.Ime"
+                               class="form-control"
+                               readonly />
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Prezime
+                        </label>
+
+                        <input asp-for="Predavac.Prezime"
+                               class="form-control"
+                               readonly />
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Cena po satu
+                        </label>
+
+                        <input asp-for="Predavac.CenaPoSatu"
+                               class="form-control" />
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            Biografija
+                        </label>
+
+                        <textarea asp-for="Predavac.Biografija"
+                                  class="form-control"
+                                      rows="6">
+                        </textarea>
+
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-success">
+                            Sačuvaj izmene
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="col-md-7">
+
+                    <h4 class="mb-3">
+                        📅 Moj raspored
+                    </h4>
+
+                    <div id="calendar"></div>
+                    <div id="detaljiCasa"
+                         class="card mt-4 border-primary"
+                         style="display:none;">
+
+                        <div class="card-header bg-light">
+
+                            <div class="d-flex justify-content-between">
+
+                                <h5 class="mb-0">
+                                    📘 Detalji časa
+                                </h5>
+
+                                <button type="button"
+                                        class="btn btn-danger btn-sm"
+                                        onclick="zatvoriDetalje()">
+                                    Zatvori
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <p>
+                                <strong>Predmet:</strong>
+                                <span id="detPredmet"></span>
+                            </p>
+
+                            <p>
+                                <strong>Učenik:</strong>
+                                <span id="detUcenik"></span>
+                            </p>
+
+                            <p>
+                                <strong>Početak:</strong>
+                                <span id="detPocetak"></span>
+                            </p>
+
+                            <p>
+                                <strong>Kraj:</strong>
+                                <span id="detKraj"></span>
+                            </p>
+
+                            <p>
+                                <strong>Status:</strong>
+                                <span id="detStatus"></span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css"
+          rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js">
+    </script>
+
+    @section Scripts
+    {
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+
+                var calendarEl =
+                    document.getElementById('calendar');
+
+                var calendar =
+                    new FullCalendar.Calendar(calendarEl, {
+
+                        initialView: 'dayGridMonth',
+
+                        locale: 'sr',
+
+                        height: 500,
+
+                        events: [
+
+                            @foreach (var cas in Model.Casovi)
+                            {
+                                    <text>
+                                        {
+                                            title: '@cas.PredmetNaziv',
+
+                                            start: '@($"{cas.Datum:yyyy-MM-dd}T{cas.VremePocetka:hh\\:mm}")',
+
+                                            end: '@($"{cas.Datum:yyyy-MM-dd}T{cas.VremeZavrsetka:hh\\:mm}")',
+
+                                            extendedProps: {
+
+                                                predmet: '@cas.PredmetNaziv',
+
+                                                ucenik: '@cas.UcenikIme',
+
+                                                status: '@cas.Status',
+
+                                                pocetak: '@cas.VremePocetka',
+
+                                                kraj: '@cas.VremeZavrsetka'
+                                            }
+                                        },
+                                    </text>
+                            }
+
+                        ],
+
+                        eventClick: function (info) {
+
+                            document
+                                .getElementById("detaljiCasa")
+                                .style.display = "block";
+
+                            document
+                                .getElementById("detPredmet")
+                                .innerText =
+                                info.event.extendedProps.predmet;
+
+                            document
+                                .getElementById("detUcenik")
+                                .innerText =
+                                info.event.extendedProps.ucenik;
+
+                            document
+                                .getElementById("detPocetak")
+                                .innerText =
+                                info.event.extendedProps.pocetak;
+
+                            document
+                                .getElementById("detKraj")
+                                .innerText =
+                                info.event.extendedProps.kraj;
+
+                            document
+                                .getElementById("detStatus")
+                                .innerText =
+                                info.event.extendedProps.status;
+                        }
+
+                    });
+
+                calendar.render();
+
+            });
+
+            function zatvoriDetalje() {
+
+                document
+                    .getElementById("detaljiCasa")
+                    .style.display = "none";
+            }
+
+        </script>
+    }

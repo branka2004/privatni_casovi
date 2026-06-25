@@ -1,0 +1,138 @@
+﻿@model PredavacDto
+
+@{
+    ViewData["Title"] = "Profil predavača";
+
+    var predmeti =
+        ViewBag.Predmeti as List<Web.Models.PredmetPredavacaDto>;
+}
+
+<div class="container mt-5">
+
+    <div class="card shadow border-0 rounded-4">
+
+        <div class="card-body p-5">
+
+            <div class="d-flex align-items-center mb-4">
+
+                <div style="font-size:70px">
+                    👨‍🏫
+                </div>
+
+                <div class="ms-4">
+
+                    <h1>
+                        @Model.Ime @Model.Prezime
+                    </h1>
+
+                    <p class="text-muted">
+                        Predavač na platformi PrivateLessons
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr />
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="card shadow-sm mb-3">
+
+                        <div class="card-body text-center">
+
+                            <h5>Cena po času</h5>
+
+                            <h3 class="text-success">
+                                @Model.CenaPoSatu din
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-8">
+
+                    <div class="card shadow-sm mb-3">
+
+                        <div class="card-body">
+
+                            <h5>Biografija</h5>
+
+                            <p>
+                                @Model.Biografija
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h3 class="mt-5 mb-4">
+                📚 Predmeti koje predaje
+            </h3>
+
+            @foreach (var predmet in predmeti!)
+            {
+                <div class="card shadow-sm mb-3">
+
+                    <div class="card-body">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-8">
+
+                                <h4>
+                                    @predmet.Naziv
+                                </h4>
+
+                                <p class="mb-1">
+                                    Oblast:
+                                    @predmet.Oblast
+                                </p>
+
+                                <p class="mb-1">
+                                    Iskustvo:
+                                    @predmet.GodineIskustva godina
+                                </p>
+
+                                <p class="mb-0">
+                                    Nivo:
+                                    @predmet.Nivo
+                                </p>
+
+                            </div>
+
+                            <div class="col-md-4 text-end">
+
+                                <a asp-controller="Casovi"
+                                       asp-action="Zakazi"
+                                       asp-route-predavacId="@Model.KorisnikId"
+                                       asp-route-predmetId="@predmet.PredmetId"
+                                       class="btn btn-success">
+
+                                    📅 Zakaži čas
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,69 @@
+﻿<h4 class="text-center mb-4">
+    Prijava
+</h4>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+@{
+    ViewData["Title"] = "Login";
+}
+@model Web.Models.LoginViewModel
+
+<div class="row justify-content-center mt-5">
+
+    <div class="col-md-5">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body p-5">
+
+                <h2 class="text-center mb-4">
+                    🎓 PrivateLessons
+                </h2>
+
+                <h4 class="text-center mb-4">
+                    Prijava
+                </h4>
+
+                <form method="post">
+
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label>Lozinka</label>
+                        <input asp-for="Lozinka"
+       type="password"
+       class="form-control" />
+                    </div>
+
+                    <button class="btn btn-primary w-100">
+                        Prijavi se
+                    </button>
+
+                </form>
+
+                <div class="text-center mt-4">
+
+                    Nemate nalog?
+
+                    <a asp-controller="Account"
+                       asp-action="Register">
+                        Registrujte se
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

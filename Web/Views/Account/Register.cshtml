@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Registracija";
+}
+
+<div class="row justify-content-center mt-5">
+
+    <div class="col-md-6">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body p-5 text-center">
+
+                <h2 class="mb-4">
+                    Registracija
+                </h2>
+
+                <p class="mb-4">
+                    Izaberite tip naloga
+                </p>
+
+                <div class="d-grid gap-3">
+
+    <a asp-controller="Account"
+       asp-action="RegisterUcenik"
+       class="btn btn-primary btn-lg">
+
+        🎓 Registruj se kao učenik
+
+    </a>
+
+    <a asp-controller="Account"
+       asp-action="RegisterPredavac"
+       class="btn btn-success btn-lg">
+
+        👨‍🏫 Registruj se kao predavač
+
+    </a>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

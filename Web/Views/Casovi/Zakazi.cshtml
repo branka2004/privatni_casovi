@@ -1,0 +1,53 @@
+﻿@if (Model.Errors.Any())
+{
+    <div class="alert alert-danger">
+        <ul class="mb-0">
+            @foreach (var error in Model.Errors)
+            {
+                <li>@error</li>
+            }
+        </ul>
+    </div>
+}
+
+@model Web.Models.ZakaziCasViewModel
+
+<h2 class="mb-4">
+    📅 Zakaži čas
+</h2>
+
+<form method="post">
+
+    <input asp-for="PredavacId" type="hidden" />
+    <input asp-for="PredmetId" type="hidden" />
+
+    <div class="mb-3">
+        <label asp-for="Datum">
+            Datum
+        </label>
+
+        <input asp-for="Datum"
+               type="date"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Vreme početka</label>
+        <input asp-for="VremePocetka"
+               type="time"
+               class="form-control" />
+    </div>
+
+    <div class="mb-4">
+        <label>Vreme završetka</label>
+        <input asp-for="VremeZavrsetka"
+               type="time"
+               class="form-control" />
+    </div>
+
+    <button type="submit"
+            class="btn btn-success">
+        Zakaži čas
+    </button>
+
+</form>
