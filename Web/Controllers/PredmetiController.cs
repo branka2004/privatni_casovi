@@ -216,11 +216,29 @@ public class PredmetiController : Controller
             HttpContext.Session.GetString(
                 "korisnikId");
 
+        var token =
+            HttpContext.Session.GetString(
+                "token");
+
         var client =
             _httpClientFactory.CreateClient();
 
-        await client.DeleteAsync(
-            $"https://localhost:7076/api/Predaje/{predavacId}/{predmetId}");
+        client.DefaultRequestHeaders.Authorization =
+            new System.Net.Http.Headers.AuthenticationHeaderValue(
+                "Bearer",
+                token);
+
+        var response =
+            await client.DeleteAsync(
+                $"https://localhost:7076/api/Predaje/{predavacId}/{predmetId}");
+
+        if (!response.IsSuccessStatusCode)
+        {
+            TempData["Greska"] =
+                "Ne možete ukloniti predmet jer postoje zakazani časovi.";
+
+            return RedirectToAction(nameof(Index));
+        }
 
         return RedirectToAction(nameof(Index));
     }

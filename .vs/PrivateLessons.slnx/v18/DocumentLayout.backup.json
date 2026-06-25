@@ -1,12 +1,615 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\web\\views\\predmeti\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|solutionrelative:web\\views\\predmeti\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\web\\controllers\\predmeticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|solutionrelative:web\\controllers\\predmeticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\controllers\\predajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\controllers\\predajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\features\\predaje\\commands\\deletepredajecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\features\\predaje\\commands\\deletepredajecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\infrastructure\\repositories\\casrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\casrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\domain\\interfaces\\icasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\icasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\domain\\entities\\predaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\predaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\domain\\entities\\predmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\predmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\infrastructure\\configurations\\predmetconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configurations\\predmetconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\controllers\\predmeticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\controllers\\predmeticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\features\\predmeti\\commands\\deletepredmetcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\features\\predmeti\\commands\\deletepredmetcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\controllers\\predavacicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\controllers\\predavacicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\controllers\\casovicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\controllers\\casovicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\web\\controllers\\casovicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|solutionrelative:web\\controllers\\casovicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\web\\models\\profilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|solutionrelative:web\\models\\profilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\web\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|solutionrelative:web\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\web\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|solutionrelative:web\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\features\\auth\\commands\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\features\\auth\\commands\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\service\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\service\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\web\\views\\casovi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|solutionrelative:web\\views\\casovi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\web\\views\\casovi\\zakazi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE2BDC88-D1CD-68A9-724B-0BB2BF755B0E}|Web\\Web.csproj|solutionrelative:web\\views\\casovi\\zakazi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\features\\casovi\\commands\\createcascommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\features\\casovi\\commands\\createcascommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\signalr\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\signalr\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\signalr\\userconnections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\signalr\\userconnections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\infrastructure\\configurations\\casconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configurations\\casconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\api\\features\\casovi\\commands\\otkazicascommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\features\\casovi\\commands\\otkazicascommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\infrastructure\\repositories\\predavacrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\predavacrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|c:\\users\\hp firefly g11\\desktop\\pr\\privatelessons\\domain\\entities\\cas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\cas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Views\\Predmeti\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Predmeti\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Views\\Predmeti\\Index.cshtml",
+              "RelativeToolTip": "Web\\Views\\Predmeti\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T10:41:11.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PredmetiController.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Controllers\\PredmetiController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\PredmetiController.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Controllers\\PredmetiController.cs",
+              "RelativeToolTip": "Web\\Controllers\\PredmetiController.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAmwPMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:41:00.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeletePredajeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Predaje\\Commands\\DeletePredajeCommand.cs",
+              "RelativeDocumentMoniker": "API\\Features\\Predaje\\Commands\\DeletePredajeCommand.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Predaje\\Commands\\DeletePredajeCommand.cs",
+              "RelativeToolTip": "API\\Features\\Predaje\\Commands\\DeletePredajeCommand.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwDAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:33:36.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Predaje.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Entities\\Predaje.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Predaje.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Entities\\Predaje.cs",
+              "RelativeToolTip": "Domain\\Entities\\Predaje.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:31:50.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Predmet.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Entities\\Predmet.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Predmet.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Entities\\Predmet.cs",
+              "RelativeToolTip": "Domain\\Entities\\Predmet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:31:45.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PredmetConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Configurations\\PredmetConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configurations\\PredmetConfiguration.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Configurations\\PredmetConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Configurations\\PredmetConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:31:19.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeletePredmetCommand.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Predmeti\\Commands\\DeletePredmetCommand.cs",
+              "RelativeDocumentMoniker": "API\\Features\\Predmeti\\Commands\\DeletePredmetCommand.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Predmeti\\Commands\\DeletePredmetCommand.cs",
+              "RelativeToolTip": "API\\Features\\Predmeti\\Commands\\DeletePredmetCommand.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA1wCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:30:31.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PredmetiController.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\PredmetiController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PredmetiController.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\PredmetiController.cs",
+              "RelativeToolTip": "API\\Controllers\\PredmetiController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:03:51.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PredavaciController.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\PredavaciController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PredavaciController.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\PredavaciController.cs",
+              "RelativeToolTip": "API\\Controllers\\PredavaciController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:03:41.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PredajeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\PredajeController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PredajeController.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\PredajeController.cs",
+              "RelativeToolTip": "API\\Controllers\\PredajeController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAQwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T10:03:08.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CasoviController.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Controllers\\CasoviController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\CasoviController.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Controllers\\CasoviController.cs",
+              "RelativeToolTip": "Web\\Controllers\\CasoviController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAkwAkBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:55:49.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProfilViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Models\\ProfilViewModel.cs",
+              "RelativeDocumentMoniker": "Web\\Models\\ProfilViewModel.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Models\\ProfilViewModel.cs",
+              "RelativeToolTip": "Web\\Models\\ProfilViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:47:38.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Web\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Web\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:47:34.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Helpers\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "Web\\Helpers\\JwtHelper.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Helpers\\JwtHelper.cs",
+              "RelativeToolTip": "Web\\Helpers\\JwtHelper.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:47:14.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-25T09:33:28.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Service\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "API\\Service\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Service\\JwtSettings.cs",
+              "RelativeToolTip": "API\\Service\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:27:52.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Service\\JwtService.cs",
+              "RelativeDocumentMoniker": "API\\Service\\JwtService.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Service\\JwtService.cs",
+              "RelativeToolTip": "API\\Service\\JwtService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwDkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:27:44.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Auth\\Commands\\LoginUserCommand.cs",
+              "RelativeDocumentMoniker": "API\\Features\\Auth\\Commands\\LoginUserCommand.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Auth\\Commands\\LoginUserCommand.cs",
+              "RelativeToolTip": "API\\Features\\Auth\\Commands\\LoginUserCommand.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:26:41.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "API\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "API\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:26:35.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Views\\Casovi\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Casovi\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Views\\Casovi\\Index.cshtml",
+              "RelativeToolTip": "Web\\Views\\Casovi\\Index.cshtml",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T09:13:41.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Zakazi.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Views\\Casovi\\Zakazi.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Casovi\\Zakazi.cshtml",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Web\\Views\\Casovi\\Zakazi.cshtml",
+              "RelativeToolTip": "Web\\Views\\Casovi\\Zakazi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T09:13:25.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserConnections.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\SignalR\\UserConnections.cs",
+              "RelativeDocumentMoniker": "API\\SignalR\\UserConnections.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\SignalR\\UserConnections.cs",
+              "RelativeToolTip": "API\\SignalR\\UserConnections.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:04:34.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NotificationHub.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\SignalR\\NotificationHub.cs",
+              "RelativeDocumentMoniker": "API\\SignalR\\NotificationHub.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\SignalR\\NotificationHub.cs",
+              "RelativeToolTip": "API\\SignalR\\NotificationHub.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T09:02:54.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T08:34:38.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "OtkaziCasCommand.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Casovi\\Commands\\OtkaziCasCommand.cs",
+              "RelativeDocumentMoniker": "API\\Features\\Casovi\\Commands\\OtkaziCasCommand.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Casovi\\Commands\\OtkaziCasCommand.cs",
+              "RelativeToolTip": "API\\Features\\Casovi\\Commands\\OtkaziCasCommand.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T08:32:33.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T08:07:57.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CasoviController.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\CasoviController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\CasoviController.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\CasoviController.cs",
+              "RelativeToolTip": "API\\Controllers\\CasoviController.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAIwDMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:48:29.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:47:00.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Repositories\\CasRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CasRepository.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Repositories\\CasRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\CasRepository.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAQwFQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:46:20.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateCasCommand.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Casovi\\Commands\\CreateCasCommand.cs",
+              "RelativeDocumentMoniker": "API\\Features\\Casovi\\Commands\\CreateCasCommand.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Features\\Casovi\\Commands\\CreateCasCommand.cs",
+              "RelativeToolTip": "API\\Features\\Casovi\\Commands\\CreateCasCommand.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowD8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:41:04.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PredavacRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Repositories\\PredavacRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\PredavacRepository.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Repositories\\PredavacRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\PredavacRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:40:13.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Interfaces\\ICasRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\ICasRepository.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Interfaces\\ICasRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\ICasRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:38:47.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CasConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Configurations\\CasConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configurations\\CasConfiguration.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Infrastructure\\Configurations\\CasConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Configurations\\CasConfiguration.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:37:52.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Cas.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Entities\\Cas.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Cas.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\Domain\\Entities\\Cas.cs",
+              "RelativeToolTip": "Domain\\Entities\\Cas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:36:44.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\HP Firefly G11\\Desktop\\pr\\PrivateLessons\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwDIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:34:36.598Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

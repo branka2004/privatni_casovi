@@ -21,4 +21,8 @@ public interface ICasRepository
 
     Task<Cas?> GetByIdSaDetaljima(
         int id);
+
+    Task<bool> PostojiCasZaPredmet(
+    int predavacId,
+    int predmetId);
 }

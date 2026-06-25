@@ -74,7 +74,15 @@ public class CasRepository
             .ToListAsync();
     }
 
-    
+    public async Task<bool> PostojiCasZaPredmet(
+    int predavacId,
+    int predmetId)
+    {
+        return await _context.Casovi.AnyAsync(x =>
+            x.PredavacId == predavacId &&
+            x.PredmetId == predmetId &&
+            x.Status != StatusCasa.Otkazan);
+    }
 
-    
+
 }

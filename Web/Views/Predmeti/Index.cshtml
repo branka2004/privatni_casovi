@@ -22,7 +22,12 @@
            class="form-control"
            placeholder="Pretraži predmet po nazivu ili oblasti..." />
 </div>
-
+@if (TempData["Greska"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Greska"]
+    </div>
+}
 <div class="row" id="predmetiContainer">
 
     @foreach (var predmet in Model)

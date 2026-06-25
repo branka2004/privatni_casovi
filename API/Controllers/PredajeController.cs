@@ -74,13 +74,16 @@ public class PredajeController : ControllerBase
     int predmetId)
     {
         var result =
-            await _mediator.Send(
-                new DeletePredajeCommand(
-                    predavacId,
-                    predmetId));
+    await _mediator.Send(
+        new DeletePredajeCommand(
+            predavacId,
+            predmetId));
 
         if (!result)
-            return NotFound();
+        {
+            return BadRequest(
+                "Ne možete ukloniti predmet jer postoje zakazani časovi.");
+        }
 
         return NoContent();
     }

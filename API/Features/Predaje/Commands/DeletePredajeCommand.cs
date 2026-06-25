@@ -20,9 +20,18 @@ public class DeletePredajeCommandHandler
     }
 
     public async Task<bool> Handle(
-        DeletePredajeCommand request,
-        CancellationToken cancellationToken)
+    DeletePredajeCommand request,
+    CancellationToken cancellationToken)
     {
+        var postojiCas =
+            await _uow.Casovi
+                .PostojiCasZaPredmet(
+                    request.PredavacId,
+                    request.PredmetId);
+
+        if (postojiCas)
+            return false;
+
         var predaje =
             await _uow.Predaje
                 .GetPredavanje(
